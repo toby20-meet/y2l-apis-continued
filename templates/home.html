@@ -6,7 +6,11 @@
             <input type="text" name="url-input">
             <input type="submit">
         </form>
-
-        {{results}}
+        <div>
+        {%for i in results%}
+        	<p>The Image Contains <a href="https://en.wikipedia.org/wiki/{{i}}">{{i}}</a></p>
+        	<br>
+        {%endfor%}
+        </div>
     </body>
 </html>
